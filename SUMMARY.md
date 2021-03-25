@@ -1,6 +1,6 @@
 # Table of contents
 
-* [README](README.md)
+* [Reading Notes](README.md)
 
 ## 前端开发核心知识进阶 <a id="advanced-core-knowledge-in-front-end-development"></a>
 
