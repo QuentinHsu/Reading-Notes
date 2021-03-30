@@ -24,11 +24,29 @@ f1()  // this = 全局对象
 f2()  // this = undefined
 ```
 
-函数直接在全局环境中调用
+函数直接在全局环境中调用/执行。
 
 * 在非严格模式下，this 指向全局对象。
   * 浏览器：window。
 * 在严格模式下，this 指向 undefined。
+
+{% hint style="danger" %}
+注意！**仅仅是在函数在全局调用/执行时，this 才是指向全局的。**假如只是函数声明/函数表达式，并 new 一个此对象的实例，这时候会发现 this 指向的是对象本身。因为 new 会绑定 this 到新创建的对象。
+{% endhint %}
+
+```javascript
+let yourJob = function(params) {
+  this.job = params
+  console.log("yourJob 内的 console：", this)
+  return this
+}
+
+let amanda = yourJob('teacher')
+let stephen = new yourJob('doctor')
+
+console.log("amanda 的 console：", amanda)
+console.log("stephen.job 的 console：", stephen.job)
+```
 
 ```javascript
 const foo = {
