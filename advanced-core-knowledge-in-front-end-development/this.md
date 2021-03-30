@@ -48,6 +48,8 @@ console.log("amanda 的 console：", amanda)
 console.log("stephen.job 的 console：", stephen.job)
 ```
 
+
+
 ```javascript
 const foo = {
   bar: 10,
