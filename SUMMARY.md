@@ -16,6 +16,6 @@
 
 ## The Go Programming Language
 
-* [入门](the-go-programming-language/ru-men.md)
-* [Hello, World](the-go-programming-language/hello-world.md)
+* [入门](the-go-programming-language/start/README.md)
+  * [Hello, World](the-go-programming-language/start/hello-world.md)
 
